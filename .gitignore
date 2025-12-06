@@ -1,0 +1,61 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.vscode/
+.idea/
+.fleet/
+.history/
+*.code-workspace
+*.swp
+*.swo
+
+# Go build outputs and caches
+bin/
+build/
+dist/
+tmp/
+coverage/
+cover/
+profile/
+debug/
+release/
+.gocache/
+.gomodcache/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.a
+*.o
+*.obj
+*.prof
+*.pprof
+*.cov
+*.coverprofile
+coverage.*
+*.lcov
+
+# Dependency bundles
+vendor/
+
+# Environment and local config
+.env
+.env.*
+*.local
+*.tmp
+*.log
+*.orig
+*.rej
+
+# Archives and backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.bak
