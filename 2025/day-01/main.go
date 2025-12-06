@@ -47,7 +47,7 @@ const (
 func updateLockPoint(line string, lockPoint int) (Direction, int, int, error) {
 	rotations, err := strconv.Atoi(string(line[1:]))
 	if err != nil {
-		return Left, 0, 0, fmt.Errorf("bruh")
+		return Invalid, 0, 0, fmt.Errorf("bruh")
 	}
 	switch line[0] {
 	case byte(Left):
@@ -55,7 +55,7 @@ func updateLockPoint(line string, lockPoint int) (Direction, int, int, error) {
 	case byte(Right):
 		return Right, rotations, (lockPoint + rotations) % 100, nil
 	default:
-		return Left, 0, 0, fmt.Errorf("bruh")
+		return Invalid, 0, 0, fmt.Errorf("bruh")
 	}
 }
 
